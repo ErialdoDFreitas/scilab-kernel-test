@@ -1,12 +1,6 @@
 # Use uma imagem base do Jupyter Notebook que tenha o Python 3.8
 FROM jupyter/base-notebook:python-3.8.8
 
-# Atualize os pacotes existentes
-RUN apt-get update && apt-get upgrade -y
-
-# Instale o Scilab
-RUN apt-get install -y scilab
-
 # Instale o pip, o gerenciador de pacotes do Python
 RUN apt-get install -y python3-pip
 
