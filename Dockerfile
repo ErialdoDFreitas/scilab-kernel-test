@@ -2,10 +2,10 @@
 FROM jupyter/base-notebook:python-3.8.8
 
 # Instale o pip, o gerenciador de pacotes do Python
-RUN apt-get install -y python3-pip
+#RUN apt-get install -y python3-pip
 
 # Instale o scilab-kernel usando o pip
-RUN pip install scilab-kernel
+RUN conda install scilab-kernel
 
 # Configure o scilab-kernel
 RUN echo "c = get_config()\n\
